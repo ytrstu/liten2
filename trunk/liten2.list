@@ -1,0 +1,16 @@
+
+$mandir=/usr/share/man
+
+%product liten2
+%copyright Alfredo Deza 2009
+%vendor Alfredo Deza
+%license LICENSE
+%readme README
+%description Find duplicates fast and delete them interactively.
+%version 0.0.2
+%postremove <remove.sh
+
+
+f 755 root sys /usr/bin/liten2 liten2.py
+f 0444 root sys /usr/share/man/man1/liten2.1.gz liten2.1.gz
+
