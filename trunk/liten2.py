@@ -317,7 +317,7 @@ def main():
         try:
             run = Walk(options.path)
             if options.size:
-                mb = int(options.size)*1048576
+                mb = int(float(options.size))*1048576
                 run = Walk(options.path, size=mb)
             run.findthis()
             out = Report()
